@@ -1,3 +1,12 @@
+*****ABOUT THE SITE****
+
+# My Text-tranformation-Website made with React
+
+I build this Website Where user can enter Text and later they can transform their Text into :
+**UpperCase**
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
