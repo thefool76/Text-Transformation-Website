@@ -2,17 +2,21 @@ import React, { useState } from "react";
 
 export default function Form(props) {
   const handleUpClick = () => {
-    console.log("Hello" + text);
+    //  console.log("Hello" + text);
     let newText = text.toUpperCase();
     setText(newText);
   };
   const handleLoClick = () => {
-    console.log("hello" + text);
+    //  console.log("hello" + text);
     let newText = text.toLowerCase();
     setText(newText);
   };
+  const handleClear = () => {
+    let newText = ""
+    setText(newText);
+  }
   const handleOnChange = (event) => {
-    console.log("get it");
+    //  console.log("get it");
     setText(event.target.value);
   };
   const [text, setText] = useState("");
@@ -34,6 +38,10 @@ export default function Form(props) {
         </button>
         <button className="btn btn-primary my-2 mx-2" onClick={handleLoClick}>
           Convert TO LowerCase
+        </button>
+        <button className ="btn btn-primary my-2 mx-2" onClick={handleClear}>
+          Clear
+
         </button>
       </div>
       <div className="container my-3">
